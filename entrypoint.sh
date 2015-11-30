@@ -31,7 +31,7 @@ disable_http(){
 }
 
 enable_http(){
-	echo "Turning off DBMS_XDB HTTP port"
+	echo "Turning on DBMS_XDB HTTP port"
 	echo "EXEC DBMS_XDB.SETHTTPPORT($HTTP_PORT);" | $SQLPLUS -S $SQLPLUS_ARGS
 }
 
