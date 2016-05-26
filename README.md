@@ -19,6 +19,13 @@ Run with custom parameters and credentials:
 
     docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD sath89/apex install
 
+Connect to Oracle Application Express web management console with following settings:
+
+    http://localhost:8080/apex
+    workspace: INTERNAL
+    user: ADMIN
+    password: 0Racle$
+
 The default list of ENV variables is:
 
     USER=sys
