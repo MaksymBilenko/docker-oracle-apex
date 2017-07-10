@@ -2,7 +2,7 @@ docker-apex
 ============================
 [![](https://badge.imagelayers.io/sath89/apex:latest.svg)](https://imagelayers.io/?images=sath89/apex:latest 'Get your own badge on imagelayers.io')
 
-Apex 5.0.2 upgrade package for sath89/oracle-xe-11g and sath89/oracle-12c
+Apex 5.1.2 upgrade package for sath89/oracle-xe-11g and sath89/oracle-12c
 
 This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath89/apex/) of [Docker Registry](https://registry.hub.docker.com/).
 
