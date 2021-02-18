@@ -12,12 +12,12 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath8
 
 Run this to upgrade APEX on you Oracle database container:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database sath89/apex:4.2.6 install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database quay.io/maksymbilenko/docker-oracle-apex:4.2.6 install
     #In that case build woud be with default settings and credentials
 
 Run with custom parameters and credentials:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD sath89/apex:4.2.6 install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD quay.io/maksymbilenko/docker-oracle-apex:4.2.6 install
 
 The default list of ENV variables is:
 
