@@ -1,6 +1,6 @@
 docker-apex
 ============================
-[![](https://badge.imagelayers.io/sath89/apex:4.2.6.svg)](https://imagelayers.io/?images=sath89/apex:4.2.6 'Get your own badge on imagelayers.io')
+[![Docker Repository on Quay](https://quay.io/repository/maksymbilenko/docker-oracle-apex/status "Docker Repository on Quay")](https://quay.io/repository/maksymbilenko/docker-oracle-apex)
 
 Apex 4.2.6 upgrade package for sath89/oracle-xe-11g and sath89/oracle-12c
 
@@ -8,7 +8,7 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath8
 
 ### Installation
 
-    docker pull sath89/apex:4.2.6
+    docker pull quay.io/maksymbilenko/docker-oracle-apex:4.2.6
 
 Run this to upgrade APEX on you Oracle database container:
 
