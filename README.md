@@ -2,9 +2,7 @@ docker-apex
 ============================
 [![Docker Repository on Quay](https://quay.io/repository/maksymbilenko/docker-oracle-apex/status "Docker Repository on Quay")](https://quay.io/repository/maksymbilenko/docker-oracle-apex)
 
-Apex 5.0.2 upgrade package for sath89/oracle-xe-11g and sath89/oracle-12c
-
-This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath89/apex/) of [Docker Registry](https://registry.hub.docker.com/).
+Apex 5.0.2 upgrade package for quay.io/maksymbilenko/oracle-xe-11g and quay.io/maksymbilenko/oracle-12c
 
 ### Installation
 
