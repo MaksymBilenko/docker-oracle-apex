@@ -1,6 +1,6 @@
 docker-apex
 ============================
-[![](https://badge.imagelayers.io/sath89/apex:latest.svg)](https://imagelayers.io/?images=sath89/apex:latest 'Get your own badge on imagelayers.io')
+[![Docker Repository on Quay](https://quay.io/repository/maksymbilenko/docker-oracle-apex/status "Docker Repository on Quay")](https://quay.io/repository/maksymbilenko/docker-oracle-apex)
 
 Apex 5.0.2 upgrade package for sath89/oracle-xe-11g and sath89/oracle-12c
 
@@ -8,16 +8,16 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath8
 
 ### Installation
 
-    docker pull sath89/apex
+    docker pull quay.io/maksymbilenko/docker-oracle-apex:latest
 
 Run this to upgrade APEX on you Oracle database container:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database sath89/apex install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database quay.io/maksymbilenko/docker-oracle-apex:latest install
     #In that case build woud be with default settings and credentials
 
 Run with custom parameters and credentials:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD sath89/apex install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD quay.io/maksymbilenko/docker-oracle-apex:latest install
 
 Connect to Oracle Application Express web management console with following settings:
 
