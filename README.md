@@ -8,16 +8,16 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/sath8
 
 ### Installation
 
-    docker pull quay.io/maksymbilenko/docker-oracle-apex:latest
+    docker pull quay.io/maksymbilenko/docker-oracle-apex:5.0.2
 
 Run this to upgrade APEX on you Oracle database container:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database quay.io/maksymbilenko/docker-oracle-apex:latest install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database quay.io/maksymbilenko/docker-oracle-apex:5.0.2 install
     #In that case build woud be with default settings and credentials
 
 Run with custom parameters and credentials:
 
-    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD quay.io/maksymbilenko/docker-oracle-apex:latest install
+    docker run -it --rm --volumes-from ${DB_CONTAINER_NAME} --link ${DB_CONTAINER_NAME}:oracle-database -e PASS=SomePassWorD quay.io/maksymbilenko/docker-oracle-apex:5.0.2 install
 
 Connect to Oracle Application Express web management console with following settings:
 
